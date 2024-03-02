@@ -12,6 +12,28 @@ useHead({
 });
 
 await useUser();
+
+defineLocalBusiness({
+  name: "test",
+  logo: "/logo.png",
+  address: {
+    addressCountry: "Australia",
+    postalCode: "2000",
+    streetAddress: "123 st",
+  },
+  openingHoursSpecification: [
+    {
+      dayOfWeek: "Saturday",
+      opens: "09:30",
+      closes: "13:30",
+    },
+    {
+      dayOfWeek: ["Monday", "Tuesday"],
+      opens: "10:30",
+      closes: "15:30",
+    },
+  ],
+});
 </script>
 <template>
   <NuxtLayout>
