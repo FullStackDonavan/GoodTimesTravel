@@ -16,6 +16,7 @@ useSchemaOrg([
   defineLocalBusiness({
     name: "test",
     logo: "/logo.png",
+    telephone: "+491762358214",
     address: {
       addressCountry: "Australia",
       postalCode: "2000",
