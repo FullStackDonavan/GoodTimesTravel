@@ -68,7 +68,7 @@ export default defineNuxtConfig({
     name: 'Awesome Site',
     description: 'Welcome to my awesome site!',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
-    indexable: true
+    // indexable: false
   },
   schemaOrg: {
     identity: {
