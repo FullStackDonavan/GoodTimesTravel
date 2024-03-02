@@ -74,7 +74,7 @@ export default defineNuxtConfig({
       type: 'Organization',
       name: 'My Company',
       url: 'https://example.com',
-      logo: 'https://example.com/logo.png'
+      logo: 'https://good-times-travel.vercel.app/_vercel/image?url=%2Fimg%2Flogo_white.png&w=320&q=80'
     }
   },
   generate: {
@@ -90,7 +90,4 @@ export default defineNuxtConfig({
   nitro: {
     compressPublicAssets: true,
   },
-  router: {
-    base: '/' // Adjust this value based on your setup
-  }
 })
