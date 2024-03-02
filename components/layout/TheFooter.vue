@@ -125,8 +125,11 @@
   </footer>
 </template>
 
+
+
 <script lang="ts" setup>
-defineLocalBusiness({
+useSchemaOrg([
+  defineLocalBusiness({
   name: "test",
   logo: "/logo.png",
   address: {
@@ -147,4 +150,5 @@ defineLocalBusiness({
     },
   ],
 });
+])
 </script>
