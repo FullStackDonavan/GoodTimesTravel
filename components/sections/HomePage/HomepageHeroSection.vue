@@ -14,6 +14,7 @@
           src="/images/charter-bus.jpg"
           alt="Happy Kids"
           quality="80"
+          sizes="sm:400px md:600px lg:800px xl:1000px xxl:1500px 2xl:3000px"
           class="full-width-height"
         />
       </div>
