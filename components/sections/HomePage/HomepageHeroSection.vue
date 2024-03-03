@@ -2,6 +2,13 @@
   <SectionContainer class="text-center">
     <GridTwoColumns>
       <div>
+        <!-- <NuxtImg
+          format="webp"
+          src="/images/charter-bus.jpg"
+          alt="Happy Kids"
+          quality="80"
+          sizes="sm:1200px md:1200px lg:2000px xl:2000px xxl:2500px 2xl:3000px"
+        /> -->
         <NuxtImg
           format="webp"
           src="/images/charter-bus.jpg"

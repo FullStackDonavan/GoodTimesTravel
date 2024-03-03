@@ -38,21 +38,6 @@ watch(
       </li>
       <li>
         <NuxtLink
-          to="/service-area-business-marketing-program"
-          class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-        >
-          <Icon
-            name="material-symbols:location-on-rounded"
-            class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
-            size="50"
-          />
-          <span class="flex-1 ml-3 whitespace-nowrap"
-            >Service Area Business</span
-          >
-        </NuxtLink>
-      </li>
-      <li>
-        <NuxtLink
           to="/about-us"
           class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
         >
@@ -76,7 +61,7 @@ watch(
             size="50"
           />
 
-          <span class="flex-1 ml-3 whitespace-nowrap">Markerting Tips</span>
+          <span class="flex-1 ml-3 whitespace-nowrap">Travel Tips</span>
         </NuxtLink>
       </li>
       <!-- <li>
