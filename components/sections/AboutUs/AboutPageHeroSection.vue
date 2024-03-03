@@ -1,81 +1,35 @@
 <template>
-  <SectionContainer>
+  <SectionContainer class="text-center">
     <GridTwoColumns>
       <div>
-        <p
-          class="mb-4 font-extrabold tracking-tight leading-none dark:text-slate-400"
-        >
-          Partner With An Expert To Help Build Your Business
-        </p>
-        <h1
-          class="mb-4 text-2xl font-extrabold tracking-tight leading-none dark:text-slate-400 md:text-3xl lg:text-5xl"
-        >
-          As Donavan Jones, my commitment as a web developer is rooted in a set
-          of core values that shape my approach to every project:
-        </h1>
-        <p
-          class="mb-8 text-lg font-normal text-slate-700 dark:text-slate-500 lg:text-xl"
-        >
-          Donavan Jones brings a wealth of experience to the challenges faced by
-          businesses in the home improvement industry, drawing from over a
-          decade of expertise in both the home improvement sector and direct
-          marketing. Recognizing the critical importance of cost-effective
-          marketing, Donavan has established a reputation for providing
-          innovative solutions. A standout feature of Donavan's portfolio is his
-          proficiency in building Nuxt.js SSR (Server-Side Rendered)
-          applications seamlessly integrated with his cutting-edge marketing
-          platform. Leveraging this expertise, the Contractor Marketing Program
-          not only offers contractors a polished online presence but also does
-          so at a fraction of the cost typically associated with custom website
-          design. Donavan's commitment to delivering affordable and tailored
-          solutions ensures that contractors can elevate their online presence
-          with professionalism and efficiency
-        </p>
+        <NuxtImg
+          format="webp"
+          src="/images/charter-bus.jpg"
+          alt="Happy Kids"
+          quality="80"
+          sizes="sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:900px"
+        />
       </div>
+      <div>
+        <ParagraphSubHeadingHero>
+          {{ IntroText.SubHeading }}
+        </ParagraphSubHeadingHero>
+        <HeadlineOneHero>
+          {{ IntroText.Heading }}
+        </HeadlineOneHero>
+        <ParagraphDescriptionHero>
+          {{ IntroText.Description }}
+        </ParagraphDescriptionHero>
+        <CardDeckThreeColumns class="hidden sm:block">
+          <Card
+            v-for="Feature in Featured"
+            :key="Feature.id"
+            :title="Feature.title"
+            :description="Feature.description"
+          />
+        </CardDeckThreeColumns>
 
-      <div class="w-full h-full">
-        <CardDeckThreeColumns>
-          <Card
-            title="Quality First"
-            description="I consistently aim for excellence, delivering well-crafted, efficient, and user-friendly websites and applications."
-          />
-          <Card
-            title="Innovative Spirit"
-            description="I embrace curiosity and stay open to the latest technologies and methodologies, ensuring I create cutting-edge solutions for my clients."
-          />
-          <Card
-            title="Collaborative Approach"
-            description="Fostering an inclusive and collaborative environment, I work seamlessly with designers, fellow developers, and clients to achieve optimal results."
-          />
-        </CardDeckThreeColumns>
-        <CardDeckThreeColumns>
-          <Card
-            title="User-Centric Focus"
-            description="Prioritizing user experience, I ensure that the websites and applications I develop are intuitive, accessible, and tailored to users' needs."
-          />
-          <Card
-            title="Commitment to Learning"
-            description="In a rapidly evolving tech landscape, I am dedicated to continuous learning, staying updated on the latest trends and best practices in web development."
-          />
-          <Card
-            title="Transparent Communication"
-            description="I maintain clear and transparent communication with clients, team members, and stakeholders, sharing progress, challenges, and timelines openly."
-          />
-        </CardDeckThreeColumns>
-        <CardDeckThreeColumns>
-          <Card
-            title="Adaptability and Flexibility"
-            description="I approach challenges with flexibility, adapting to changing requirements and embracing new technologies when they enhance project outcomes."
-          />
-          <Card
-            title="Efficiency Advocate:"
-            description="I write clean, efficient code, and actively seek ways to optimize performance, valuing simplicity and avoiding unnecessary complexity."
-          />
-          <Card
-            title="Ownership and Accountability"
-            description="I take ownership of my work, acknowledging and addressing challenges promptly and diligently to find effective solutions."
-          />
-        </CardDeckThreeColumns>
+        <CtaButton :to="CTA.to"> {{ CTA.text }} </CtaButton>
       </div>
     </GridTwoColumns>
   </SectionContainer>
@@ -83,9 +37,56 @@
 
 <script>
 export default {
-  name: "HeroSection",
+  name: "HomepageHeroSection",
+  data() {
+    return {
+      IntroText: {
+        SubHeading:
+          "Embark on a Journey of Comfort, Convenience, and Exceptional Service",
+        Heading:
+          "Explore Boundless Adventures with Good Time Travel Bus Charters",
+        Description:
+          "At Good Time Travel, we redefine the travel experience with our premier bus charter services. From scenic road trips to group excursions, we prioritize your comfort and satisfaction every step of the way. With our luxurious amenities, expert staff, and commitment to excellence, your journey with us is guaranteed to be memorable and stress-free.",
+      },
+      Featured: [
+        {
+          id: 1,
+          title: "Unmatched Comfort",
+          description:
+            "Travel in style and relaxation with our luxurious reclining seats and spacious interiors, ensuring a smooth and enjoyable ride for all passengers.",
+        },
+        {
+          id: 2,
+          title: "Convenient Amenities",
+          description:
+            "Stay connected and entertained throughout your journey with onboard flat screen monitors and charging ports, providing entertainment and power at your fingertips.",
+        },
+        {
+          id: 3,
+          title: "Expert Service",
+          description:
+            "Our dedicated and friendly staff are committed to providing top-notch service, from assistance with loading luggage to ensuring a safe and pleasant travel experience for all.",
+        },
+      ],
+      CTA: {
+        to: "/get-started",
+        text: "Get Started Now!",
+      },
+    };
+  },
 };
 </script>
 
 <style scoped>
+.image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.full-width-height {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the entire container */
+}
 </style>
