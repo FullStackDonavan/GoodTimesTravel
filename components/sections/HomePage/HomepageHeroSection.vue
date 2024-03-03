@@ -5,7 +5,7 @@
         <NuxtImg
           preload
           format="webp"
-          src="~/img/charter-bus.jpg"
+          src="/images/charter-bus.jpg"
           alt="Happy Kids"
           quality="80"
           width="910"
