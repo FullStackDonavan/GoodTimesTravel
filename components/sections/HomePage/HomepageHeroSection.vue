@@ -7,7 +7,6 @@
           src="/images/charter-bus.jpg"
           alt="Happy Kids"
           quality="80"
-          sizes="2xl:3000px"
         />
       </div>
       <div class="p-4">
