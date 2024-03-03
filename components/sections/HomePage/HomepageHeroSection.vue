@@ -8,7 +8,7 @@
           src="/images/charter-bus.jpg"
           alt="Happy Kids"
           quality="80"
-          width="910"
+          sizes="sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:900px"
         />
       </div>
       <div>
