@@ -40,8 +40,7 @@ export default {
   data() {
     return {
       IntroText: {
-        SubHeading:
-          "Embark on a Journey of Comfort, Convenience, and Exceptional Service",
+        SubHeading: "Our Commitment to Excellence",
         Heading: "About Good Time Travel",
         Description:
           "Good Time Travel is a nationwide leading bus charter company providing quality transportation and personal service for point-to-point excursions, long-distance, overnight trips, special events and more. No matter where you are traveling in the United States, our bus charter rentals offer safe, reliable transportation at affordable rates for both large and small groups. We pride ourselves on delivering extensive services to fulfill all your transportation needs with first-rate customer service and safety as our top priorities. Our experienced staff will support and guide you from the first call to the last mile so that your bus rental and trip goes exactly as planned.",
@@ -49,21 +48,21 @@ export default {
       Featured: [
         {
           id: 1,
-          title: "Unmatched Comfort",
+          title: "Commitment to Safety",
           description:
-            "Travel in style and relaxation with our luxurious reclining seats and spacious interiors, ensuring a smooth and enjoyable ride for all passengers.",
+            "Providing secure transportation with top-notch safety measures for all our passengers.",
         },
         {
           id: 2,
-          title: "Convenient Amenities",
+          title: "Unparalleled Customer Service",
           description:
-            "Stay connected and entertained throughout your journey with onboard flat screen monitors and charging ports, providing entertainment and power at your fingertips.",
+            "Ensuring a seamless journey from start to finish with personalized attention and support.",
         },
         {
           id: 3,
-          title: "Expert Service",
+          title: "Reliable and Affordable Travel",
           description:
-            "Our dedicated and friendly staff are committed to providing top-notch service, from assistance with loading luggage to ensuring a safe and pleasant travel experience for all.",
+            "Offering dependable and cost-effective transportation solutions tailored to your needs.",
         },
       ],
       CTA: {
