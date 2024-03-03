@@ -7,10 +7,9 @@
           src="/images/charter-bus.jpg"
           alt="Happy Kids"
           quality="80"
-          sizes="sm:217px md:323px lg:376px xl:504px xxl:632px 2xl:900px"
         />
       </div>
-      <div>
+      <div class="p-4">
         <ParagraphSubHeadingHero>
           {{ IntroText.SubHeading }}
         </ParagraphSubHeadingHero>
@@ -43,10 +42,9 @@ export default {
       IntroText: {
         SubHeading:
           "Embark on a Journey of Comfort, Convenience, and Exceptional Service",
-        Heading:
-          "Explore Boundless Adventures with Good Time Travel Bus Charters",
+        Heading: "About Good Time Travel",
         Description:
-          "At Good Time Travel, we redefine the travel experience with our premier bus charter services. From scenic road trips to group excursions, we prioritize your comfort and satisfaction every step of the way. With our luxurious amenities, expert staff, and commitment to excellence, your journey with us is guaranteed to be memorable and stress-free.",
+          "Good Time Travel is a nationwide leading bus charter company providing quality transportation and personal service for point-to-point excursions, long-distance, overnight trips, special events and more. No matter where you are traveling in the United States, our bus charter rentals offer safe, reliable transportation at affordable rates for both large and small groups. We pride ourselves on delivering extensive services to fulfill all your transportation needs with first-rate customer service and safety as our top priorities. Our experienced staff will support and guide you from the first call to the last mile so that your bus rental and trip goes exactly as planned.",
       },
       Featured: [
         {
