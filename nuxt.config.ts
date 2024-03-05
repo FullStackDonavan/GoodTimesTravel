@@ -40,7 +40,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     private: {
       stripeSecretKey: process.env.STRIPE_SECRET_KEY,
-      db: process.env.DATABASE_URL,
+      db: process.env.POSTGRES_URL,
     },
     public: {
       GHL_API_KEY: process.env.GHL_API_KEY,
