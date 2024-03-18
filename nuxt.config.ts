@@ -40,7 +40,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     private: {
       stripeSecretKey: process.env.STRIPE_SECRET_KEY,
-      db: process.env.POSTGRES_PRISMA_URL,
+      db: process.env.DATABASE_URL,
     },
     public: {
       GHL_API_KEY: process.env.GHL_API_KEY,
@@ -65,16 +65,16 @@ export default defineNuxtConfig({
   },
   site: {
     url: 'http://localhost:3000/',
-    name: 'Awesome Site',
-    description: 'Welcome to my awesome site!',
+    name: 'Good Times Travel',
+    description: 'Welcome to Good Times Travel!',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
     // indexable: false
   },
   schemaOrg: {
     identity: {
       type: 'Organization',
-      name: 'My Company',
-      url: 'https://example.com',
+      name: 'Good Times Travel',
+      url: 'https://good-times-travel.vercel.app/',
       logo: 'https://good-times-travel.vercel.app/_vercel/image?url=%2Fimg%2Flogo_white.png&w=320&q=80'
     }
   },

@@ -4,12 +4,15 @@ CREATE TABLE `User` (
     `loginType` VARCHAR(191) NULL DEFAULT 'email',
     `password` VARCHAR(191) NULL,
     `email` VARCHAR(191) NULL,
-    `name` VARCHAR(191) NULL,
+    `firstName` VARCHAR(191) NULL,
+    `lastName` VARCHAR(191) NULL,
     `username` VARCHAR(191) NULL,
+    `phone` VARCHAR(191) NULL,
     `stripeCustomerId` VARCHAR(191) NULL,
 
     UNIQUE INDEX `User_email_key`(`email`),
     UNIQUE INDEX `User_username_key`(`username`),
+    UNIQUE INDEX `User_phone_key`(`phone`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -50,7 +53,6 @@ CREATE TABLE `Question` (
     `title` VARCHAR(191) NOT NULL,
     `description` VARCHAR(191) NOT NULL,
 
-    FULLTEXT INDEX `Question_title_description_idx`(`title`, `description`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -59,9 +61,8 @@ CREATE TABLE `Answer` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `questionId` INTEGER NOT NULL,
     `authorId` INTEGER NOT NULL,
-    `text` VARCHAR(191) NOT NULL,
+    `text` TEXT NOT NULL,
 
-    FULLTEXT INDEX `Answer_text_idx`(`text`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
@@ -152,6 +153,20 @@ CREATE TABLE `CategoryAssignment` (
     `entity_type` VARCHAR(191) NOT NULL,
     `entity_id` INTEGER NOT NULL,
     `categoryId` INTEGER NOT NULL,
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- CreateTable
+CREATE TABLE `TestMigration` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
+
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- CreateTable
+CREATE TABLE `TestAnotherMigration` (
+    `id` INTEGER NOT NULL AUTO_INCREMENT,
 
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
