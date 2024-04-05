@@ -18,9 +18,9 @@ useSchemaOrg([
     logo: "/logo.png",
     telephone: "+491762358214",
     address: {
-      addressCountry: "Australia",
-      postalCode: "2000",
-      streetAddress: "123 st",
+      addressCountry: "Untied States",
+      postalCode: "29624",
+      streetAddress: "445 E Shockley Ferry Rd, Anderson, SC ",
     },
     openingHoursSpecification: [
       {
