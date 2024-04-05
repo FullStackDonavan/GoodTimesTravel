@@ -14,7 +14,7 @@ useHead({
 await useUser();
 useSchemaOrg([
   defineLocalBusiness({
-    name: "test",
+    name: "Good Time Travel",
     logo: "/logo.png",
     telephone: "+8647601263",
     address: {
