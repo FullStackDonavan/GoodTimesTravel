@@ -64,18 +64,21 @@ export default defineNuxtConfig({
     },
   },
   site: {
-    url: 'http://localhost:3000/',
+    url: 'https://goodtimetravelsc.com',
     name: 'Good Times Travel',
     description: 'Welcome to Good Times Travel!',
     defaultLocale: 'en', // not needed if you have @nuxtjs/i18n installed
     // indexable: false
   },
+  robots: {
+    enabled: true,
+  },
   schemaOrg: {
     identity: {
       type: 'Organization',
       name: 'Good Times Travel',
-      url: 'https://good-times-travel.vercel.app/',
-      logo: 'https://good-times-travel.vercel.app/_vercel/image?url=%2Fimg%2Flogo_white.png&w=320&q=80'
+      url: 'https://goodtimetravelsc.com',
+      logo: 'https://goodtimetravelsc.com/_vercel/image?url=%2Fimg%2Flogo_white.png&w=320&q=80'
     }
   },
   generate: {
