@@ -79,7 +79,7 @@ export default defineNuxtConfig({
   schemaOrg: {
     identity: {
       type: 'Organization',
-      name: 'Good Times Travel',
+      name: 'Good Times Travel ',
       url: 'https://goodtimetravelsc.com',
       logo: 'https://goodtimetravelsc.com/_vercel/image?url=%2Fimg%2Flogo_white.png&w=320&q=80'
     }
