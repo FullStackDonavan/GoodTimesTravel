@@ -20,7 +20,7 @@ useSchemaOrg([
     address: {
       addressCountry: "Untied States",
       postalCode: "29624",
-      streetAddress: "445 E Shockley Ferry Rd, Anderson, SC ",
+      address: "445 E Shockley Ferry Rd",
     },
     openingHoursSpecification: [
       {
