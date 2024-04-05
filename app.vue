@@ -21,7 +21,7 @@ useSchemaOrg([
       addressCountry: "United States",
       postalCode: "29624",
       address: "445 E Shockley Ferry Rd",
-      streetAddress: "445 E Shockley Ferry Rd, Anderson, SC ",
+      streetAddress: "445 E Shockley Ferry Rd, Anderson, SC 29624, USA",
     },
     openingHoursSpecification: [
       {
