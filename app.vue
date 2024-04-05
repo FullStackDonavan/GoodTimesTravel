@@ -21,17 +21,13 @@ useSchemaOrg([
       addressCountry: "Untied States",
       postalCode: "29624",
       address: "445 E Shockley Ferry Rd",
+      streetAddress: "445 E Shockley Ferry Rd, Anderson, SC ",
     },
     openingHoursSpecification: [
       {
-        dayOfWeek: "Saturday",
-        opens: "09:30",
-        closes: "13:30",
-      },
-      {
-        dayOfWeek: ["Monday", "Tuesday"],
-        opens: "10:30",
-        closes: "15:30",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "10:00",
+        closes: "17:00",
       },
     ],
   }),
