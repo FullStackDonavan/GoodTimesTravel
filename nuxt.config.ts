@@ -75,7 +75,7 @@ export default defineNuxtConfig({
   },
   seo: {
     redirectToCanonicalSiteUrl: true
-  }
+  },
   schemaOrg: {
     identity: {
       type: 'Organization',
