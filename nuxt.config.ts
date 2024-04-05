@@ -73,6 +73,9 @@ export default defineNuxtConfig({
   robots: {
     enabled: true,
   },
+  seo: {
+    redirectToCanonicalSiteUrl: true
+  }
   schemaOrg: {
     identity: {
       type: 'Organization',
