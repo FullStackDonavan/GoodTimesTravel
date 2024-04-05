@@ -18,7 +18,7 @@ useSchemaOrg([
     logo: "/logo.png",
     telephone: "+8647601263",
     address: {
-      addressCountry: "3166-2",
+      addressCountry: "US",
       postalCode: "29624",
       address: "445 E Shockley Ferry Rd",
       addressLocality: "Anderson",
